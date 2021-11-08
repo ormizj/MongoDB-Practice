@@ -14,6 +14,7 @@ import com.jbc.message.response.SuccessResponse;
 import com.jbc.service.EmployeeService;
 import com.jbc.util.exception.ExceptionErrorCodeUtil;
 
+/*Rest Controller for Employee*/
 @RestController
 @RequestMapping("/employee")
 public class EmployeeController implements EmployeeApi {

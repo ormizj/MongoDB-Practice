@@ -18,6 +18,7 @@ import io.swagger.annotations.ApiParam;
 import io.swagger.annotations.ApiResponses;
 import io.swagger.annotations.ApiResponse;
 
+/*Swagger documentation for Employee*/
 public interface EmployeeApi {
 
 	@ApiOperation(value = "Create Employee", notes = "Creates an Employee and returns it\n\n[id - unnecessary]")
@@ -31,7 +32,6 @@ public interface EmployeeApi {
 			@ApiResponse(code = 400, message = "Employee update failed", response = ExceptionResponse.class) })
 	@PutMapping(value = "/update-employee", produces = "application/json")
 	public ResponseEntity<?> updateEmployee(@RequestBody EmployeeRequest employee);
-
 
 	@ApiOperation(value = "Update Employee Department", notes = "Updates an Employee Department returns the Employee")
 	@ApiResponses(value = { @ApiResponse(code = 200, message = "Successful operation", response = Employee.class),

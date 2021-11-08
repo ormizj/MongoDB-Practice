@@ -134,6 +134,7 @@ public class DepartmentService implements DepartmentIfc, InitializingBean {
 		mongoTemplate.save(department);
 	}
 
+	/*ensures that the Department is valid*/
 	private void checkDepartment(Department department)
 			throws ModelNullException, ModelInvalidException, ModelAlreadyExistsException {
 		if (department == null || department.getName() == null)
@@ -147,6 +148,7 @@ public class DepartmentService implements DepartmentIfc, InitializingBean {
 					department.getName());
 	}
 
+	/* setting up the departmentSequence for auto-incrementation */
 	@Override
 	public void afterPropertiesSet() throws Exception {
 		if (departmentSequenceRepo.findAll().isEmpty()) {
@@ -155,7 +157,7 @@ public class DepartmentService implements DepartmentIfc, InitializingBean {
 			departmentSequence = departmentSequenceRepo.findAll().get(0).getSequence();
 	}
 
-	/* returns the next available departmentId */
+	/* returns the next available department ID */
 	private long getDepartmentsNextId() {
 		long maxId = 0;
 		for (Department department : departmentRepo.findAll()) {

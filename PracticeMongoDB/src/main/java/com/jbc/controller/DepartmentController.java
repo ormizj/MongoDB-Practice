@@ -1,6 +1,7 @@
 package com.jbc.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,6 +15,7 @@ import com.jbc.message.response.SuccessResponse;
 import com.jbc.service.DepartmentService;
 import com.jbc.util.exception.ExceptionErrorCodeUtil;
 
+/*Rest Controller for Department*/
 @RestController
 @RequestMapping("/department")
 public class DepartmentController implements DepartmentApi {

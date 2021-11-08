@@ -3,6 +3,7 @@ package com.jbc.exception;
 import lombok.Getter;
 import lombok.Setter;
 
+/*basic exception that all other exceptions will extend*/
 @Getter
 @Setter
 public abstract class CustomException extends Exception {

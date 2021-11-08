@@ -11,6 +11,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
+/*Sequence to handle the incrementation of the Employee ID*/
 @Document(value = "employeesSequence")
 @Getter
 @Setter

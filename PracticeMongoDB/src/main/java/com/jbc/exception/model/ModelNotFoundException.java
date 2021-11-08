@@ -5,6 +5,7 @@ import com.jbc.util.exception.ExceptionErrorCodeUtil;
 import com.jbc.util.model.ModelAttributeUtil;
 import com.jbc.util.model.ModelTypeUtil;
 
+/*exception for a Model that was not found*/
 public class ModelNotFoundException extends ModelException {
 
 	private static final long serialVersionUID = 2702378366111544961L;
@@ -22,6 +23,7 @@ public class ModelNotFoundException extends ModelException {
 		value = name;
 	}
 
+	/* initial method for all the must have operations, mostly for the errorCode */
 	private void constructorInit(ModelTypeUtil model, ModelAttributeUtil attribute) {
 		errorCode = ExceptionErrorCodeUtil.DepartmentNotFoundException.toString();
 		this.model = model;

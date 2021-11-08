@@ -100,6 +100,7 @@ public class EmployeeService implements EmployeeIfc, InitializingBean {
 		return employee.get();
 	}
 
+	/*ensures that the Employee is valid*/
 	private void checkEmployee(Employee employee) throws ModelInvalidException, ModelNullException {
 		if (employee == null || employee.getFirstName() == null || employee.getLastName() == null
 				|| employee.getDepartmentName() == null || employee.getProfession() == null) {
@@ -111,6 +112,7 @@ public class EmployeeService implements EmployeeIfc, InitializingBean {
 			throw new ModelInvalidException(ModelTypeUtil.EMPLOYEE, ModelAttributeUtil.LAST_NAME);
 	}
 
+	/* setting up the employeeSequence for auto-incrementation */
 	@Override
 	public void afterPropertiesSet() throws Exception {
 		if (employeeSequenceRepo.findAll().isEmpty())
@@ -119,6 +121,7 @@ public class EmployeeService implements EmployeeIfc, InitializingBean {
 			employeeSequence = employeeSequenceRepo.findAll().get(0).getSequence();
 	}
 
+	/* returns the next available employee ID */
 	private long getEmployeesNextId() {
 		long maxId = 0;
 		for (Employee employee : employeeRepo.findAll()) {

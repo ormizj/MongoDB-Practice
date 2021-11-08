@@ -1,5 +1,6 @@
 package com.jbc.util.controller.url;
 
+/*enum that contains all the Employee endpoints*/
 public enum EmployeeUrlUtil {
 
 	CREATE_EMPLOYEE, UPDATE_EMPLOYEE, UPDATE_EMPLOYEE_DEPARTMENT, DELETE_EMPLOYEE, GET_EMPLOYEES, GET_EMPLOYEE;

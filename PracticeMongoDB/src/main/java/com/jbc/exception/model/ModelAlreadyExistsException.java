@@ -5,6 +5,7 @@ import com.jbc.util.exception.ExceptionErrorCodeUtil;
 import com.jbc.util.model.ModelAttributeUtil;
 import com.jbc.util.model.ModelTypeUtil;
 
+/*exception for a model already existing*/
 public class ModelAlreadyExistsException extends ModelException {
 
 	private static final long serialVersionUID = -6999516401879961430L;
@@ -22,6 +23,7 @@ public class ModelAlreadyExistsException extends ModelException {
 		value = name;
 	}
 
+	/* initial method for all the must have operations, mostly for the errorCode */
 	private void constructorInit(ModelTypeUtil model, ModelAttributeUtil attribute) {
 		errorCode = ExceptionErrorCodeUtil.DepartmentAlreadyExistsException.toString();
 		this.attribute = attribute;

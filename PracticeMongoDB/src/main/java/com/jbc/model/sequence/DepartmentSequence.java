@@ -11,6 +11,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
+/*Sequence to handle the incrementation of the Department ID*/
 @Document(value = "departmentsSequence")
 @Getter
 @Setter

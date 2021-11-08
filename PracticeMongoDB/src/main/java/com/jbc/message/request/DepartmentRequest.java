@@ -14,6 +14,7 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Getter;
 import lombok.Setter;
 
+/*class to limit the sent information through the Front-End related to a Department*/
 @Getter
 @Setter
 @ApiModel(description = "Name between Departments must be unique")

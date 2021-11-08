@@ -4,6 +4,7 @@ import com.jbc.exception.general.ModelException;
 import com.jbc.util.exception.ExceptionErrorCodeUtil;
 import com.jbc.util.model.ModelTypeUtil;
 
+/*exception for a Model that is or contains Null*/
 public final class ModelNullException extends ModelException {
 
 	private static final long serialVersionUID = -5935761979130763757L;

@@ -6,10 +6,11 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
+/*class to give a body to a response*/
 @Getter
 @Setter
 @AllArgsConstructor
-@ApiModel(description  = "String wrapper class, for successful responses")
+@ApiModel(description = "String wrapper class, for successful responses")
 public class SuccessResponse {
 
 	@ApiModelProperty(value = "Success message")

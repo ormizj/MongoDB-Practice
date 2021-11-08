@@ -10,6 +10,7 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Getter;
 import lombok.Setter;
 
+/*class to limit the sent information through the Front-End related to a Employee*/
 @Getter
 @Setter
 public class EmployeeRequest {

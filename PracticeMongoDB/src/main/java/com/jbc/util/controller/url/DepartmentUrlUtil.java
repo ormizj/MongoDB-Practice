@@ -1,5 +1,6 @@
 package com.jbc.util.controller.url;
 
+/*enum that contains all the Department endpoints*/
 public enum DepartmentUrlUtil {
 
 	CREATE_DEPARTMENT, UPDATE_DEPARTMENT, DELETE_DEPARTMENT, GET_DEPARTMENTS, ADD_EMPLOYEE, REMOVE_EMPLOYEE,

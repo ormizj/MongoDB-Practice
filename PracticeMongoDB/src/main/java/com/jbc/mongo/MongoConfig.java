@@ -5,9 +5,10 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.data.mongodb.core.mapping.event.ValidatingMongoEventListener;
 import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
 
+/*MongoDB basic configurations*/
 @Configuration
 public class MongoConfig {
- 
+
 	/* configuring Mongo validation to work with javax.validation */
 	@Bean
 	public ValidatingMongoEventListener validatingMongoEventListener() {
@@ -19,5 +20,5 @@ public class MongoConfig {
 	public LocalValidatorFactoryBean validator() {
 		return new LocalValidatorFactoryBean();
 	}
-	
+
 }

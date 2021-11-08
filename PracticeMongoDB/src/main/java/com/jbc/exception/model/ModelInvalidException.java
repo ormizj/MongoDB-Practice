@@ -5,6 +5,7 @@ import com.jbc.util.exception.ExceptionErrorCodeUtil;
 import com.jbc.util.model.ModelAttributeUtil;
 import com.jbc.util.model.ModelTypeUtil;
 
+/*exception for a Model that is not valid*/
 public final class ModelInvalidException extends ModelException {
 
 	private static final long serialVersionUID = -1188147176818121021L;

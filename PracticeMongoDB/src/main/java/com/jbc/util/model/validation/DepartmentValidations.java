@@ -1,5 +1,6 @@
 package com.jbc.util.model.validation;
 
+/*enum that contains all the Department required validations*/
 public enum DepartmentValidations {
 
 	NAME_MIN(2), CAPACITY_MIN(6);

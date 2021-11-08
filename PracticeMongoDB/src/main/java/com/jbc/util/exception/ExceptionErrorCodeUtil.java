@@ -1,7 +1,8 @@
 package com.jbc.util.exception;
 
+/*enum that contains all the Exceptions error codes, values are not all upper-case for convenience*/
 public enum ExceptionErrorCodeUtil {
-	
+
 	DepartmentTemplateException("TMP-000.001"), EmployeeTemplateException("TMP-000.002"),
 
 	EmployeeAlreadyExistsException("EMP-001.001"), EmployeeNotFoundException("EMP-001.002"),

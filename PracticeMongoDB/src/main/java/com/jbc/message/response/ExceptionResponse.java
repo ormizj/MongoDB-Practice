@@ -6,6 +6,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
+/*class to give a body to an exception*/
 @Getter
 @Setter
 @AllArgsConstructor

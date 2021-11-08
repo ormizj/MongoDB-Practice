@@ -1,5 +1,6 @@
 package com.jbc.util.model;
 
+/*enum that contains all the Model types*/
 public enum ModelTypeUtil {
 
 	DEPARTMENT, EMPLOYEE;

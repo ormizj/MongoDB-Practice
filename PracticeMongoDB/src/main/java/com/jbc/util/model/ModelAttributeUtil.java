@@ -1,5 +1,6 @@
 package com.jbc.util.model;
 
+/*enum that contains all the Model attributes*/
 public enum ModelAttributeUtil {
 
 	/* shared attributes */

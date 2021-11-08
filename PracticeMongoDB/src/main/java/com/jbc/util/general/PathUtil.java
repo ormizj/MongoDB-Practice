@@ -1,5 +1,6 @@
 package com.jbc.util.general;
 
+/*enum that contains all the used Paths information*/
 public enum PathUtil {
 
 	COM_JBC_PACKAGE;
